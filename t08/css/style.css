@@ -1,7 +1,7 @@
-/* body{
+body{
     box-sizing: border-box;
-    
-} */
+    caret-color: transparent;
+}
 table{
     text-align: center;
     outline: 3px solid black;
@@ -14,6 +14,7 @@ th{
     width: 50px;
     border: 1px solid white;
     border: 1px solid white;
+    cursor: pointer;
     
 }
 tr{
