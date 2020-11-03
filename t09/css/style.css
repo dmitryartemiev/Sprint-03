@@ -1,0 +1,133 @@
+.game {
+  padding: 0px 0px 10px 0px;
+  margin: auto;
+  width: 600px;
+  background-color: #333333;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  caret-color: transparent;
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.interface {
+  margin: 0px 30px 30px 30px;
+
+  display: flex;
+}
+.cellContainer {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cell {
+  height: 130px;
+  width: 130px;
+  background-color: #c1c1c1;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+  
+}
+.cell:nth-child(9),
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  margin-bottom: 0px;
+}
+.cell::before {
+  position: absolute;
+  width: 130px;
+  height: 5px;
+  content: "";
+  background-color: #a2a09d;
+  bottom: -3px;
+  z-index: 1;
+  right: 0;
+
+}
+.cell::after {
+  position: absolute;
+  content: "";
+  width: 127px;
+  height: 129px;
+  bottom: -5px;
+  right: -4px;
+  z-index: 2;
+  border-right: 4px solid #db8a26;
+  border-bottom: 3px solid #db8a26;
+}
+.menu {
+  background-color: #c1c1c1;
+}
+.menuContainer {
+  background-color: #c1c1c1;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+  min-width: 100px;
+  position: relative;
+}
+.first {
+  background-color: #db8a26;
+  text-align: center;
+  padding: 7px 0px;
+}
+.second {
+  background-color: #d3d2d3;
+  text-align: center;
+  padding: 7px 0px;
+  margin-top: 10px;
+}
+.playAgain {
+  background-color: #3f3f3f;
+  color: white;
+}
+.numberOfTurns,
+.number {
+  margin-top: 10px;
+  text-align: center;
+}
+.number{
+    font-size: 30px;
+    font-weight: 500;
+}
+.playAgain {
+  text-align: center;
+  padding: 10px 5px;
+  width: 90px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+.mark{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 500;
+}
+.draw{
+
+    text-align: center;
+
+    font-size: 30px; 
+
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
