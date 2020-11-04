@@ -1,0 +1,72 @@
+.slider_container{
+    background-color:black;
+    margin: auto;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    transition: .3s ease all;
+    caret-color: transparent;
+}
+.images_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+button{
+    height: 100%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+    
+}
+.next{
+    margin: auto;
+    position: absolute;
+    right: 0px;
+}
+.prev__arrow{
+    height: 10px;
+    transform: rotate(180deg);
+}
+.next__arrow{
+    height: 10px;
+}
+.nav{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: flex;
+}
+
+.image:nth-child(1){
+    background-color:brown;
+    transition: .6s ease all;
+    transform: translateX(0px);
+
+    
+}
+.image:nth-child(2){
+    background-color: red;
+    transition: .6s ease all;
+    
+}
+.image:nth-child(3){
+    background-color: blue;
+    transition: .6s ease all;
+}
+.image:nth-child(4){
+    background-color:yellow;
+    transition: .6s ease all;
+}
+.image{
+    height: 100%;
+    min-width: 100%;
+}
+.image img {
+    width: 100%;
+    height: auto;
+}
